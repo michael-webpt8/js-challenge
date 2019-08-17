@@ -10,7 +10,7 @@
 
 function TabCreator(tabsArr) {
 	const tab = document.createElement('div');
-	tab.classList.add('tab');
+	tab.classList.add('tabs');
 	tab.textContent = tabsArr;
 
 	return tab;
@@ -21,6 +21,14 @@ axios
 	.then((response) => {
 		console.log(response.data.topics);
 		const topicsArr = response.data.topics;
+
+		let tabItem;
+		const tabs = document.querySelector('.tabs');
+		console.log('tabs', tabs);
+		topicsArr.forEach((tab) => {
+			tabItem = TabCreator(tab);
+			tabs.appendChild(tabItem);
+		});
 	})
 	.catch((err) => {
 		console.log(err);
