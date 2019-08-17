@@ -46,6 +46,8 @@ we might manipulate a nodelist into an array so we can use array functions not a
 
 5. What is a component?
 
+a component is a compact chunk of code that compartiminalizes html, css(or a language that turns into css), and javascript that can be used over and over again.
+
 ### Git Set up
 
 * [ ] Fork the project into your GitHub user account
