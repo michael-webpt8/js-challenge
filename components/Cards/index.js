@@ -20,7 +20,18 @@
 axios
 	.get('https://lambda-times-backend.herokuapp.com/articles')
 	.then((response) => {
-		console.log(response.data.articles);
+		console.log('r', response.data.articles);
+
+		const articles = response.data.articles;
+		console.log(articles);
+		for (let i = 0; i < articles.length; i++) {
+			console.log('a', articles[i]);
+		}
+
+		//	console.log(articleArray);
+
+		const article = ArticleCard(articles);
+		console.log('articles', article);
 	})
 	.catch((err) => {
 		console.log(err);
@@ -56,7 +67,7 @@ function ArticleCard(article) {
 	author.appendChild(imgContainer); // appends inside of author div.
 
 	const image = document.createElement('img');
-	img.src = article.authorPhoto;
+	image.src = article.authorPhoto;
 	imgContainer.appendChild(image); // appends inside of author div inside of img-container.
 
 	const authorName = document.createElement('span');
