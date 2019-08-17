@@ -23,8 +23,9 @@ axios
 		console.log('r', response.data.articles);
 
 		const articles = response.data.articles;
-		console.log(articles);
-		for (let i = 0; i < articles.length; i++) {
+        console.log(articles);
+        const articleArr = 
+		for(let i = 0; i < articles.length; i++) {
 			console.log('a', articles[i]);
 		}
 
