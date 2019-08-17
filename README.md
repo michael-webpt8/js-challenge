@@ -38,7 +38,11 @@ an event is a handle for the user to manipulate the browser page.
 
 3. What is an event listener?
 
+an action handler that attaches to a dom element and waits for a specified action to occur on it.
+
 4. Why would we convert a NodeList into an Array?
+
+we might manipulate a nodelist into an array so we can use array functions not available on nodelists
 
 5. What is a component?
 
