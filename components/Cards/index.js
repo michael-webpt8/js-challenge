@@ -57,7 +57,7 @@ function ArticleCard(article) {
 
 	const image = document.createElement('img');
 	img.src = article.authorPhoto;
-	imgContainer.appendChild(img); // appends inside of author div inside of img-container.
+	imgContainer.appendChild(image); // appends inside of author div inside of img-container.
 
 	const authorName = document.createElement('span');
 	authorName.textContent = article.authorName;
