@@ -30,7 +30,11 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+Document object model, a treelike structure
+
 2. What is an event?
+
+an event is a handle for the user to manipulate the browser page.
 
 3. What is an event listener?
 
